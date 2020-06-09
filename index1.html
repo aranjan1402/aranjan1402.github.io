@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.dropbtn {
+  background-color: #3498DB;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #2980B9;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+</style>
+</head>
+<body>
+<h1 style="text-align:center"><b><i>Know Corona cases in your state in a single click</b></i></h1>
+<div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">Select States</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="http://azurefunc1990099.azurewebsites.net/api/HttpExample?code=7PuLHJt0PfYqLQjgmjITjJtZrymCw/KqJnQfaXkGIqNte7ot5OwE9Q==&name=Functin">Arunachal Pradesh</a>
+    <a href="#">Andhra Pradesh</a>
+    <a href="#">Assam</a>
+	<a href="#">Bihar</a>
+	<a href="#">Chhattisgarh</a>
+	<a href="#">Goa</a>
+	<a href="#">Gujarat</a>
+	<a href="#">Haryana</a>
+	<a href="#">Himachal Pradesh</a>
+	<a href="#">Jammu & Kashmir</a>
+	<a href="#">Jharkhand</a>
+	<a href="#">Karnataka</a>
+	<a href="#">Kerala</a>
+	<a href="#">Madhya Pradesh</a>
+	<a href="#">Maharashtra</a>
+	<a href="#">Manipur</a>
+	<a href="#">Meghalaya</a>
+	<a href="#">Mizoram</a>
+	<a href="#">Nagaland</a>
+	<a href="#">Odisha</a>
+	<a href="#">Punjab</a>
+	<a href="#">Rajasthan</a>
+	<a href="#">Sikkim</a>
+	<a href="#">Tamil Nadu</a>
+	<a href="#">Telangana</a>
+	<a href="#">Tripura</a>
+	<a href="#">Uttar Pradesh</a>
+	<a href="#">Uttarakhand</a>
+	<a href="#">West Bengal</a>
+	<a href="#">Andaman and Nicobar Islands</a>
+	<a href="#">Chandigarh</a>
+	<a href="#">Dadra and Nagar Haveli</a>
+	<a href="#">Daman & Diu</a>
+	<a href="#">Lakshadweep</a>
+	<a href="#">Delhi</a>
+	</div>
+</div>
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+<style>
+body {
+	background-image: url("https://media.istockphoto.com/vectors/coronavirus-background-vector-id1210271239");
+        background-repeat:no-repeat;
+        background-size:cover;
+		} 
+</style>
+</style>
+</body>
+</html>
